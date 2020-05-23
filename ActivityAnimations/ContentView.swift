@@ -28,19 +28,19 @@ struct ContentView: View {
                         .frame(width: 20, height: 20)
                         .offset(x: leftOffset)
                         .opacity(0.7)
-                        .animation(Animation.linear(duration: 1))
+                        .animation(Animation.easeInOut(duration: 1))
                     Circle()
                         .fill(Color.blue)
                         .frame(width: 20, height: 20)
                         .offset(x: leftOffset)
                         .opacity(0.7)
-                        .animation(Animation.linear(duration: 1).delay(0.2))
+                        .animation(Animation.easeInOut(duration: 1).delay(0.2))
                     Circle()
                         .fill(Color.blue)
                         .frame(width: 20, height: 20)
                         .offset(x: leftOffset)
                         .opacity(0.7)
-                        .animation(Animation.linear(duration: 1).delay(0.4))
+                        .animation(Animation.easeInOut(duration: 1).delay(0.4))
                 }
                 .onReceive(timer) { (_) in
                     swap(&self.leftOffset, &self.rightOffset)
@@ -52,7 +52,7 @@ struct ContentView: View {
                     .fill(Color.blue)
                     .frame(width: 80, height: 20)
                     .offset(x: shouldAnimate ? 100 : -100)
-                    .animation(Animation.linear(duration: 1).repeatForever(autoreverses: true))
+                    .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true))
                     .onAppear {
                         self.factor = 1
                 }
@@ -77,7 +77,7 @@ struct ContentView: View {
                         .frame(width: 10, height: 50)
                 }
                 .frame(width: shouldAnimate ? 150 : 100)
-                .animation(Animation.linear(duration: 1).repeatForever(autoreverses: true))
+                .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true))
             }
             
             Spacer()
@@ -87,17 +87,17 @@ struct ContentView: View {
                         .fill(Color.blue)
                         .frame(width: 20, height: 20)
                         .scaleEffect(shouldAnimate ? 1.0 : 0.5)
-                        .animation(Animation.linear(duration: 0.5).repeatForever())
+                        .animation(Animation.easeInOut(duration: 0.5).repeatForever())
                     Circle()
                         .fill(Color.blue)
                         .frame(width: 20, height: 20)
                         .scaleEffect(shouldAnimate ? 1.0 : 0.5)
-                        .animation(Animation.linear(duration: 0.5).repeatForever().delay(0.3))
+                        .animation(Animation.easeInOut(duration: 0.5).repeatForever().delay(0.3))
                     Circle()
                         .fill(Color.blue)
                         .frame(width: 20, height: 20)
                         .scaleEffect(shouldAnimate ? 1.0 : 0.5)
-                        .animation(Animation.linear(duration: 0.5).repeatForever().delay(0.6))
+                        .animation(Animation.easeInOut(duration: 0.5).repeatForever().delay(0.6))
                 }
             }
             Spacer()
@@ -118,7 +118,7 @@ struct ContentView: View {
                                 .scaleEffect(shouldAnimate ? 2 : 0)
                         }
                         .opacity(shouldAnimate ? 0.0 : 0.2)
-                        .animation(Animation.linear(duration: 1).repeatForever(autoreverses: false))
+                        .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: false))
                 )
             }
             Spacer()
