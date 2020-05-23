@@ -46,7 +46,7 @@ struct ContentView: View {
                     swap(&self.leftOffset, &self.rightOffset)
                 }
             }
-            .padding(.bottom, 100)
+            .padding(.bottom, 60)
             Section {
                 RoundedRectangle(cornerRadius: 10)
                     .fill(Color.blue)
