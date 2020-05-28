@@ -10,12 +10,10 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var factor: CGFloat = 0.5
     @State private var shouldAnimate = false
     let timer = Timer.publish(every: 1.6, on: .main, in: .common).autoconnect()
     @State var leftOffset: CGFloat = -100
     @State var rightOffset: CGFloat = 100
-    @State var leftOpa: Double = 0.7
     
     var body: some View {
         
@@ -53,9 +51,6 @@ struct ContentView: View {
                     .frame(width: 80, height: 20)
                     .offset(x: shouldAnimate ? 100 : -100)
                     .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true))
-                    .onAppear {
-                        self.factor = 1
-                }
             }
             Spacer()
             Section {
