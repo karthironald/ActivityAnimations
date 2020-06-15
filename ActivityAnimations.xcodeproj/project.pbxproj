@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7786A8052497F3D300514C38 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7786A8042497F3D300514C38 /* ArcView.swift */; };
 		77A4CC852478583500D33959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A4CC842478583500D33959 /* AppDelegate.swift */; };
 		77A4CC872478583500D33959 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A4CC862478583500D33959 /* SceneDelegate.swift */; };
 		77A4CC892478583500D33959 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A4CC882478583500D33959 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7786A8042497F3D300514C38 /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
 		77A4CC812478583400D33959 /* ActivityAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A4CC842478583500D33959 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77A4CC862478583500D33959 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				77A4CC842478583500D33959 /* AppDelegate.swift */,
 				77A4CC862478583500D33959 /* SceneDelegate.swift */,
 				77A4CC882478583500D33959 /* ContentView.swift */,
+				7786A8042497F3D300514C38 /* ArcView.swift */,
 				77A4CC8A2478583900D33959 /* Assets.xcassets */,
 				77A4CC8F2478583900D33959 /* LaunchScreen.storyboard */,
 				77A4CC922478583900D33959 /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77A4CC852478583500D33959 /* AppDelegate.swift in Sources */,
+				7786A8052497F3D300514C38 /* ArcView.swift in Sources */,
 				77A4CC872478583500D33959 /* SceneDelegate.swift in Sources */,
 				77A4CC892478583500D33959 /* ContentView.swift in Sources */,
 			);
