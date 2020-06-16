@@ -38,7 +38,7 @@ struct ArcView: View {
                         if self.progress == 100 {
                             self.progress = 0
                         }
-                        withAnimation(Animation.spring().speed(1)) {
+                        withAnimation(Animation.linear(duration: 1)) {
                             self.progress += 10
                         }
                 }
