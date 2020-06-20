@@ -55,7 +55,7 @@ struct ArcView: View {
                     .stroke(Color.pink, style: StrokeStyle(lineWidth: 20, lineCap: .round))
             }
             .rotationEffect(self.shouldAnimate ? .degrees(360) : .zero)
-            .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true))
+            .animation(Animation.linear(duration: 2).repeatForever(autoreverses: false))
             .frame(width: 200, height: 200)
             .onAppear {
                 self.shouldAnimate = true
